@@ -8,6 +8,7 @@
 
 import SwiftUI
 
+@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 public struct Unwrap<Value, Content: View>: View {
     private let value: Value?
     private let contentProvider: (Value) -> Content
