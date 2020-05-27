@@ -30,10 +30,10 @@ public class PickerObject: NSObject, ObservableObject, UIDocumentPickerDelegate 
         return picker
     }
 
-    var rootVC: UIViewController
+    private var rootVC: UIViewController
     public var didPickDocument: ((URL) -> Void)?
     
-    internal init(rootVC: UIViewController) {
+    public init(rootVC: UIViewController) {
         self.rootVC = rootVC
     }
     
