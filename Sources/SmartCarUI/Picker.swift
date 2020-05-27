@@ -6,7 +6,9 @@
 //  Copyright © 2020 Robert Smith. All rights reserved.
 //
 
+#if canImport(UIKit)
 import SwiftUI
+import UIKit
 
 @available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 public class PickerObject: NSObject, ObservableObject, UIDocumentPickerDelegate {
@@ -83,10 +85,4 @@ struct Picker: UIViewControllerRepresentable {
     }
 }
 
-
-struct Picker_Previews: PreviewProvider {
-    static var previews: some View {
-//        Picker()
-        EmptyView()
-    }
-}
+#endif
